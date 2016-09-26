@@ -1,0 +1,26 @@
+	
+			<a ui-sref="dashboard" class="btn btn-muted">Ir a lo otro</a>
+	<div ng-repeat="book in libroControl.productos">
+			<div class="row"></div>
+			<br>
+			<div class="col-md-12">
+				<img class="im-responsive" ng-src="{{book.imagenes[0].url}}">
+			
+			</div>
+			<div class="col-md-8 .bg-primary">
+				<p class="pull-right">ID: {{book.id}}</p>
+				<h1 class="text-success"><em>{{book.titulo}}</em></h1>
+				<p class="">
+					{{book.descripcion}}		
+				</p>
+			</div>
+			<div class="col-md-12">
+			 -->
+				<h4 class="text-success">Editorial</h4>
+				<em class="text-warning">{{book.editorial}}</em>
+				<h4 class="text-info">Autor</h4>
+				<em class="text-muted">{{book.autor}}</em>
+			</div>
+
+		</div>
+		
